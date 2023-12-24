@@ -1,4 +1,4 @@
-import React, { useEffect, useMemo } from "react";
+import { useEffect, useMemo } from "react";
 import { callsStore } from "../../entities/calls/model/callsStore";
 
 import { Spinner } from "../../shared/ui/spinner/spinner";

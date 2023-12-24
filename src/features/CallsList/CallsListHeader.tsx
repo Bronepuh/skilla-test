@@ -1,4 +1,3 @@
-import React from "react";
 import classNames from 'classnames/bind';
 
 import { callsStore } from "../../entities/calls/model/callsStore";

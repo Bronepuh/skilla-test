@@ -1,8 +1,5 @@
-import React from "react";
-
 import styles from './calls-list.module.scss'
 import { CallsItem } from "./CallsItem";
-import { ICall } from "../../entities/calls/model/types";
 import { Spinner } from "../../shared/ui/spinner/spinner";
 import { FormateCall } from "../../entities/calls/utils/helpers";
 import moment from "moment";

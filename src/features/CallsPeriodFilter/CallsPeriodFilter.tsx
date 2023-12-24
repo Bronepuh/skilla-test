@@ -1,4 +1,4 @@
-import React, { useState } from "react";
+import { useState } from "react";
 
 import { Option } from "../../shared/utils/types";
 import { CALLS_PERIOD_OPTIONS } from "./utils/constants";

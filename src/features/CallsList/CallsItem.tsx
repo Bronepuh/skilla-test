@@ -1,6 +1,3 @@
-import React, { useEffect } from "react";
-import { callsStore } from "../../entities/calls/model/callsStore";
-
 import styles from './calls-list.module.scss';
 import { ICall } from "../../entities/calls/model/types";
 
