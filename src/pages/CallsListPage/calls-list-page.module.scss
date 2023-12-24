@@ -1,0 +1,60 @@
+@import "../../styles/variables.scss";
+@import "../../styles/function.scss";
+
+.wrapper {
+  width: 100%;
+  height: 100vh;
+
+  padding-top: rem(80);
+  padding-bottom: rem(120);
+
+  background-color: $main-bg-color;
+
+  @media (max-width: 1500px) {
+    padding-left: rem(10);
+    padding-right: rem(10);
+  }
+}
+
+.container {
+  display: grid;
+  grid-template-rows: min-content 1fr;
+
+  max-width: rem(1440);
+  height: 100%;
+
+  margin: 0 auto;
+
+  background-color: white;
+}
+
+.callsListsWrapper {
+  display: flex;
+  flex-wrap: wrap;
+  align-items: flex-start;
+  align-content: flex-start;
+
+  width: 100%;
+
+  padding-left: rem(40);
+
+  overflow-y: scroll;
+  overflow-x: hidden;
+}
+
+.callsListsWrapper::-webkit-scrollbar-track {
+  -webkit-box-shadow: inset 0 0 6px rgba(0, 0, 0, 0.1);
+  background-color: #F5F5F5;
+  border-radius: 10px;
+}
+
+.callsListsWrapper::-webkit-scrollbar {
+  width: 10px;
+  background-color: #F5F5F5;
+}
+
+.callsListsWrapper::-webkit-scrollbar-thumb {
+  border-radius: 10px;
+  background-color: #FFF;
+  background-image: -webkit-linear-gradient(top, #99f5fc 0%, #ffa8f9 50%, #9fb8ef 51%, #2ac0ed 100%);
+}

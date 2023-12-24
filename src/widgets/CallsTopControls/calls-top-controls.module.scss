@@ -1,0 +1,10 @@
+@import '../../styles/variables.scss';
+@import '../../styles/function.scss';
+
+.wrapper {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+
+  background-color: $main-bg-color;
+}

@@ -1,0 +1,158 @@
+@import "../../styles/function.scss";
+@import "../../styles/variables.scss";
+@import "../../styles/animations.scss";
+
+.wrapper {
+  position: relative;
+
+  display: flex;
+  flex-wrap: wrap;
+
+  min-width: rem(204);
+}
+
+.inputWrapper {
+  display: flex;
+  justify-content: flex-end;
+  width: 100%;
+}
+
+.input {
+  display: flex;
+
+  align-items: center;
+
+  width: fit-content;
+
+  padding: rem(7) 0 rem(7) rem(12);
+
+  font-size: rem(14);
+  font-style: normal;
+  line-height: 148%; /* 20.72px */
+
+  color: $color-blue;
+
+  &:hover {
+    .calendar {
+      background-image: url("../../assets/img/calendar-blue.svg");
+    }
+  }
+}
+
+.inputValue {
+  margin-right: rem(4);
+
+  cursor: pointer;
+}
+
+.arrowImgLeft {
+  display: flex;
+  width: rem(8);
+  height: rem(11);
+  margin-right: rem(8);
+
+  background-image: url("../../assets/img/dropdown-violet.svg");
+  background-repeat: no-repeat;
+  background-size: contain;
+
+  cursor: pointer;
+
+  &:hover {
+    background-image: url("../../assets/img/dropdown-blue.svg");
+  }
+
+  &:active {
+    background-image: url("../../assets/img/dropdown-black.svg");
+  }
+}
+
+.arrowImgRight {
+  display: flex;
+  width: rem(20);
+  height: rem(11);
+  background-image: url("../../assets/img/dropdown-violet.svg");
+  background-repeat: no-repeat;
+  background-size: contain;
+  transform: rotate(180deg);
+
+  cursor: pointer;
+
+  &:hover {
+    background-image: url("../../assets/img/dropdown-blue.svg");
+  }
+
+  &:active {
+    background-image: url("../../assets/img/dropdown-black.svg");
+  }
+}
+
+.calendar {
+  width: rem(18);
+  height: rem(18);
+  margin-left: rem(8);
+  margin-right: rem(8);
+
+  background-image: url("../../assets/img/calendar.svg");
+  background-repeat: no-repeat;
+  background-size: contain;
+
+  cursor: pointer;
+}
+
+.optionsList {
+  position: absolute;
+  top: rem(32);
+
+  width: 100%;
+
+  font-size: rem(14);
+  font-style: normal;
+  line-height: 148%; /* 20.72px */
+
+  background-color: white;
+  box-shadow: $box-shadow;
+  border-radius: 0 0 rem(8) rem(8);
+
+  color: $text;
+  cursor: pointer;
+
+  z-index: 1001;
+
+  overflow: hidden;
+
+  animation-duration: 0.1s;
+  animation-name: showing;
+}
+
+.optionsItem {
+  display: flex;
+  flex-wrap: wrap;
+
+  width: 100%;
+  padding: rem(7) rem(12);
+
+  &:hover {
+    background-color: $hover-bg-color;
+  }
+
+  span {
+    display: flex;
+    width: 100%;
+  }
+}
+
+.activeOption {
+  color: $color-blue;
+}
+
+.disabledOption {
+  color: $text-header;
+  pointer-events: none;
+}
+
+//DatePicker
+.rootClassName {
+  span[role="button"] {
+    width: rem(15);
+  }
+}

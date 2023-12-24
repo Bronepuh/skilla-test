@@ -1,0 +1,18 @@
+.rhap_main-controls {
+  display: flex;
+  justify-content: center;
+  /* border-radius: 50%; */
+  /* width: 40px;
+  height: 40px; */
+
+  /* border: 1px solid red; */
+}
+
+.rhap_container svg {
+  box-sizing: border-box;
+
+  color: white;
+  background-color: #015EF5;
+  border-radius: 50%;
+
+}

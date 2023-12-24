@@ -1,0 +1,92 @@
+@import "../../styles/variables.scss";
+@import "../../styles/function.scss";
+
+.wrapper {
+  position: relative;
+
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+
+  width: rem(352);
+  height: rem(48);
+  padding: rem(14) rem(18);
+  border-radius: rem(48);
+
+  background-color: #eaf0fa;
+}
+
+//play
+.playButton {
+  display: flex;
+  width: rem(24);
+  height: rem(24);
+
+  border-radius: 50%;
+
+  background-color: white;
+  background-image: url("../../assets/img/play-gray.png");
+  background-repeat: no-repeat;
+  background-size: rem(14);
+  background-position: rem(6) center;
+
+  &:hover {
+    background-image: url("../../assets/img/play-blue.png");
+  }
+}
+
+.pauseButton {
+  background-image: url("../../assets/img/pause-blue.png");
+  background-size: rem(24);
+  background-position: center;
+
+  &:hover {
+    background-image: url("../../assets/img/pause-blue.png");
+  }
+}
+
+.trackDuration {
+  font-size: rem(15);
+}
+
+.currenTime {
+  position: absolute;
+  top: 0;
+  left: rem(105);
+  font-size: rem(14);
+}
+
+.upload {
+  display: flex;
+  width: rem(24);
+  height: rem(24);
+
+  border-radius: 50%;
+
+  background-image: url("../../assets/img/upload-gray.svg");
+  background-repeat: no-repeat;
+  background-size: contain;
+  background-position: center;
+
+  &:hover {
+    background-image: url("../../assets/img/upload-blue.svg");
+    background-size: 13px;
+  }
+}
+
+.close {
+  display: flex;
+  width: rem(23);
+  height: rem(23);
+
+  border-radius: 50%;
+
+  background-image: url("../../assets/img/close-grey.svg");
+  background-repeat: no-repeat;
+  background-size: contain;
+  background-position: center;
+
+  &:hover {
+    background-image: url("../../assets/img/close-blue.svg");
+  }
+}

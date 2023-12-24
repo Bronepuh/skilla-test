@@ -1,0 +1,13 @@
+.createDateRangePicker input {
+
+  width: 55px !important;
+  font-size: 10px !important;
+}
+
+.createDateRangePicker input::placeholder {
+  font-size: 10px !important;
+}
+
+.createDateRangePicker {
+  border: none !important;
+}

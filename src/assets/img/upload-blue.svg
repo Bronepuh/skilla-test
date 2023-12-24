@@ -1,0 +1,17 @@
+<svg width="13" height="16" viewBox="0 0 13 16" fill="none" xmlns="http://www.w3.org/2000/svg">
+<rect width="13" height="16" fill="#E5E5E5"/>
+<g id="UI kit" clip-path="url(#clip0_0_1)">
+<rect width="1600" height="490" transform="translate(-1018 -204)" fill="white"/>
+<g id="audio">
+<rect id="Rectangle 1460" x="-282" y="-16" width="352" height="48" rx="24" fill="#EAF0FA"/>
+<g id="Frame 1575">
+<path id="Vector" d="M0 16H13V14.1176H0V16ZM13 5.64706H9.28571V0H3.71429V5.64706H0L6.5 12.2353L13 5.64706Z" fill="#002CFB"/>
+</g>
+</g>
+</g>
+<defs>
+<clipPath id="clip0_0_1">
+<rect width="1600" height="490" fill="white" transform="translate(-1018 -204)"/>
+</clipPath>
+</defs>
+</svg>

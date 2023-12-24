@@ -1,0 +1,235 @@
+@import "../../styles/variables.scss";
+@import "../../styles/function.scss";
+@import "../../styles/animations.scss";
+
+.callsList {
+  display: flex;
+  flex-wrap: wrap;
+  align-items: flex-start;
+  align-content: flex-start;
+
+  width: 100%;
+
+  li:last-child {
+    border-bottom: none;
+  }
+}
+
+.callsListTitle {
+  position: relative;
+
+  display: flex;
+  align-items: center;
+
+  width: 100%;
+  padding-top: rem(20);
+  padding-bottom: rem(20);
+
+  font-size: rem(14);
+  line-height: 148%;
+
+  color: $text;
+  border-bottom: 1px solid $border-color;
+
+  z-index: 0;
+}
+
+.callsListTitleCount {
+  margin-top: rem(-8);
+  margin-left: rem(2);
+
+  color: $text-header;
+  font-size: rem(12);
+  line-height: 100%; /* 12px */
+}
+
+//header
+.callsHeaderItem {
+  position: sticky;
+  top: rem(0);
+
+  display: flex;
+  align-items: center;
+
+  width: 100%;
+  padding-top: rem(20);
+  padding-bottom: rem(20);
+  padding-right: rem(40);
+
+  font-size: rem(14);
+  line-height: 148%;
+
+  color: $text-secondary;
+  border-bottom: 1px solid $border-color;
+  background-color: white;
+
+  // opacity: 0.87;
+  z-index: 13;
+}
+
+.headerText {
+  display: flex;
+  align-items: center;
+}
+
+.headerType {
+  width: rem(54);
+}
+
+.headerTime {
+  display: flex;
+  width: rem(88);
+
+  cursor: pointer;
+}
+
+.arrowImg {
+  margin-left: rem(4);
+
+  cursor: pointer;
+}
+
+.arrowActive {
+  transform: rotate(180deg);
+}
+
+.headerStaff {
+  width: rem(129);
+}
+
+.headerCall {
+  width: rem(325);
+}
+
+.headerSource {
+  width: rem(214);
+}
+
+.headerMark {
+  width: rem(90);
+}
+
+//calls
+.callsItem {
+  display: flex;
+  align-items: center;
+  align-content: center;
+
+  width: 100%;
+  max-height: rem(66);
+
+  padding-top: rem(20);
+  padding-bottom: rem(20);
+
+  font-size: rem(14);
+  line-height: 148%;
+
+  color: $text;
+  border-bottom: 1px solid $border-color;
+
+  &:hover {
+    background-color: rgba(212, 223, 243, 0.17);
+
+    cursor: pointer;
+  }
+}
+
+.callType {
+  display: flex;
+
+  width: rem(54);
+}
+
+.callTime {
+  display: flex;
+
+  width: rem(88);
+}
+
+.callPersonAvatar {
+  display: flex;
+  align-items: center;
+
+  width: rem(129);
+
+  img {
+    width: rem(32);
+    height: rem(32);
+  }
+}
+
+.callTel {
+  display: flex;
+
+  width: rem(325);
+}
+
+.callSource {
+  display: flex;
+
+  width: rem(214);
+}
+
+.callMark {
+  display: flex;
+
+  width: rem(90);
+}
+
+.callDuration {
+  display: flex;
+
+  flex-grow: 1;
+}
+
+//Audio
+.audioPlayer {
+  display: flex;
+  audio::-webkit-media-controls-panel {
+    background-color: #eaf0fa;
+  }
+
+  audio::-webkit-media-controls-mute-button {
+  }
+
+  audio::-webkit-media-controls-play-button {
+    // background: url("../../assets/img/play.svg") 50% 50% no-repeat;
+    // background-size: contain;
+  }
+
+  audio::-webkit-media-controls-timeline-container {
+  }
+
+  audio::-webkit-media-controls-current-time-display {
+  }
+
+  audio::-webkit-media-controls-time-remaining-display {
+  }
+
+  audio::-webkit-media-controls-timeline {
+  }
+
+  audio::-webkit-media-controls-volume-slider-container {
+  }
+
+  audio::-webkit-media-controls-volume-slider {
+  }
+
+  audio::-webkit-media-controls-seek-back-button {
+  }
+
+  audio::-webkit-media-controls-seek-forward-button {
+  }
+
+  audio::-webkit-media-controls-fullscreen-button {
+  }
+
+  audio::-webkit-media-controls-rewind-button {
+  }
+
+  audio::-webkit-media-controls-return-to-realtime-button {
+  }
+
+  audio::-webkit-media-controls-toggle-closed-captions-button {
+  }
+}

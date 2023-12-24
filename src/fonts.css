@@ -1,0 +1,14 @@
+@font-face {
+  font-family: 'SFProDisplay-Regular';
+  src: url('assets/fonts/SFProDisplay-Regular.woff2') format('woff2'), 
+       url('assets/fonts/SFProDisplay-Regular.ttf') format('truetype'); 
+  font-weight: 400;
+  font-style: normal;
+}
+@font-face {
+  font-family: 'SFProDisplay-Bold';
+  src: url('assets/fonts/SFProDisplay-Bold.woff2') format('woff2'), 
+       url('assets/fonts/SFProDisplay-Bold.ttf') format('truetype'); 
+  font-weight: 700;
+  font-style: normal;
+}
