@@ -13,6 +13,15 @@ const CallsListPage = () => {
   const { fetchCalls, calls, period, inOut, needUpdate, isCallsLoading, filter } = callsStore();
 
   useEffect(() => {
+    fetchCalls({
+      date_start: period.dateStart,
+      date_end: period.dateEnd,
+      in_out: inOut,
+      limit: 1000
+    })
+  }, [])
+
+  useEffect(() => {
     if (needUpdate) {
       fetchCalls({
         date_start: period.dateStart,
